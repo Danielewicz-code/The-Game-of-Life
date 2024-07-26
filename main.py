@@ -7,7 +7,8 @@ import time
 def random_state(w, h):
 
     state = utils.dead_state(w, h)
-    weights = [8, 1, 1] #blank, red, blue
+    #weight initialization
+    weights = [8, 1, 1] #blank, red, blue 
     
     for i in range(h):
         for j in range(w):
@@ -80,7 +81,7 @@ def next_board_state(current_state):
     
 
 #test
-os.system('cls' if os.name == 'nt' else 'clear')  # Clear the terminal screen initially
+os.system('cls' if os.name == 'nt' else 'clear')  
 state = random_state(settings.b_width, settings.b_height)
 
 while True:
